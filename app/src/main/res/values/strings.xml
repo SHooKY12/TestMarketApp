@@ -1,3 +1,10 @@
 <resources>
     <string name="app_name">TestShopApplication</string>
+    <string name="tv_title">Вход</string>
+    <string name="et_hint_name">Имя</string>
+    <string name="et_hint_surname">Фамилия</string>
+    <string name="et_hint_tel_number">Номер телефона</string>
+    <string name="btn_text">Войти</string>
+    <string name="tv_terms_of_agreement">Нажимая кнопку “Войти”, Вы принимаете</string>
+    <string name="tv_continue_terms">условия программы лояльности</string>
 </resources>
