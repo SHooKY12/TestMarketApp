@@ -7,8 +7,8 @@ import dagger.hilt.android.HiltAndroidApp
 @HiltAndroidApp
 class TestApplication: Application() {
 
-    override fun attachBaseContext(base: Context) {
-        OpenPreferences.init(base)
-        super.attachBaseContext(LocaleHelper.onAttach(base))
-    }
+//    override fun attachBaseContext(base: Context) {
+////        OpenPreferences.init(base)
+////        super.attachBaseContext(LocaleHelper.onAttach(base))
+//    }
 }

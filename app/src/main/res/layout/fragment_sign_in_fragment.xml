@@ -61,27 +61,83 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/et_name" />
 
-    <EditText
-        android:id="@+id/et_tel_num"
-        android:layout_width="match_parent"
-        android:layout_height="50dp"
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="@dimen/et_top_margin"
-        android:layout_marginEnd="16dp"
-        android:background="@drawable/rectangle_edit_text"
-        android:drawablePadding="12dp"
-        android:gravity="center_vertical"
-        android:hint="@string/et_hint_tel_number"
-        android:imeOptions="actionDone"
-        android:inputType="text"
-        android:maxLines="1"
-        android:paddingHorizontal="16dp"
-        android:textColor="@color/black"
-        android:textColorHint="@color/hint_color"
-        android:textSize="16sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/et_surname" />
+    <!--    <com.google.android.material.textfield.TextInputLayout-->
+    <!--        android:id="@+id/layout_tel_num"-->
+    <!--        android:layout_width="match_parent"-->
+    <!--        android:layout_marginStart="16dp"-->
+    <!--        android:layout_marginTop="@dimen/et_top_margin"-->
+    <!--        android:layout_marginEnd="16dp"-->
+    <!--        android:layout_height="50dp"-->
+    <!--        app:layout_constraintEnd_toEndOf="parent"-->
+    <!--        app:layout_constraintStart_toStartOf="parent"-->
+    <!--        app:layout_constraintTop_toBottomOf="@id/et_surname"-->
+    <!--        app:prefixTextAppearance="@style/TextInputLayoutAppearance"-->
+    <!--        app:prefixTextColor="@color/black"-->
+    <!--        app:prefixText="+998">-->
+
+    <!--        <com.google.android.material.textfield.TextInputEditText-->
+    <!--            android:id="@+id/et_tel_num"-->
+    <!--            android:layout_width="match_parent"-->
+    <!--            android:layout_height="match_parent"-->
+    <!--            android:background="@drawable/rectangle_edit_text"-->
+    <!--            android:drawablePadding="12dp"-->
+    <!--            android:digits="1234567890+ "-->
+    <!--            android:gravity="center_vertical"-->
+    <!--            android:hint="@string/et_hint_tel_number"-->
+    <!--            android:imeOptions="actionDone"-->
+    <!--            android:inputType="number"-->
+    <!--            android:maxLines="1"-->
+    <!--            android:paddingHorizontal="16dp"-->
+    <!--            android:textColor="@color/black"-->
+    <!--            android:textColorHint="@color/hint_color"-->
+    <!--            android:textSize="16sp" />-->
+
+    <!--    </com.google.android.material.textfield.TextInputLayout>-->
+
+        <com.example.testshopapplication.ui.custom.PhoneTextInputLayout
+            android:id="@+id/edit_text_phone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:hint="AAAAAAAAA"
+            android:layout_marginTop="@dimen/et_top_margin"
+            android:layout_marginEnd="16dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/et_surname" />
+
+<!--    <com.google.android.material.textfield.TextInputLayout-->
+<!--        android:id="@+id/layout_tel_num"-->
+<!--        style="@style/TextInputLayout"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="50dp"-->
+<!--        android:layout_marginStart="16dp"-->
+<!--        android:layout_marginTop="@dimen/et_top_margin"-->
+<!--        android:layout_marginEnd="16dp"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintTop_toBottomOf="@id/et_surname"-->
+<!--        app:prefixText="+7"-->
+<!--        app:prefixTextAppearance="@style/TextInputLayoutAppearance"-->
+<!--        app:prefixTextColor="@color/black">-->
+
+<!--        <com.example.testshopapplication.ui.custom.MaskEditText-->
+<!--            android:id="@+id/edit_text"-->
+<!--            style="@style/TextInputEditText"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="match_parent"-->
+<!--            android:digits="1234567890+ "-->
+<!--            android:hint="@string/user_phone_number"-->
+<!--            android:imeOptions="actionDone"-->
+<!--            android:inputType="number"-->
+<!--            android:textSize="14sp"-->
+<!--            app:mask_edit="### ### ## ##" />-->
+
+
+
+<!--    </com.google.android.material.textfield.TextInputLayout>-->
+
+
 
     <Button
         android:id="@+id/btn_sign_in"
@@ -96,7 +152,7 @@
         android:textSize="14sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/et_tel_num" />
+        app:layout_constraintTop_toBottomOf="@id/edit_text_phone" />
 
     <TextView
         android:layout_width="wrap_content"

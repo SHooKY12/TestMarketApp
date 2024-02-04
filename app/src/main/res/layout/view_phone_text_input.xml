@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.textfield.TextInputLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/text_input_layout"
+    style="@style/TextInputLayout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:prefixText="+7"
+    app:prefixTextColor="@color/black">
+
+    <com.example.testshopapplication.ui.custom.MaskEditText
+        android:id="@+id/edit_text"
+        style="@style/TextInputEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:digits="1234567890+ "
+        android:hint="@string/user_phone_number"
+        android:imeOptions="actionDone"
+        android:inputType="number"
+        android:textSize="16sp"
+        app:mask_edit="(###) ###-##-##" />
+
+</com.google.android.material.textfield.TextInputLayout>

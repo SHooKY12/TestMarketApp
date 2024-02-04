@@ -10,8 +10,8 @@ class MainViewModel @Inject constructor(): BaseViewModel() {
 
 
 
-    fun loginState() = runBlocking {
-        preferenceStorage.loginState.first()
-    }
+//    fun loginState() = runBlocking {
+////        preferenceStorage.loginState.first()
+//    }
 
 }

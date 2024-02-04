@@ -8,6 +8,7 @@ import com.example.testshopapplication.R
 import com.example.testshopapplication.databinding.MainActivityBinding
 import com.example.testshopapplication.ui.base.BaseActivity
 import dagger.hilt.android.AndroidEntryPoint
+import dagger.hilt.android.HiltAndroidApp
 
 @AndroidEntryPoint
 class MainActivity : BaseActivity() {
@@ -29,18 +30,19 @@ class MainActivity : BaseActivity() {
             navController =
                 (supportFragmentManager.findFragmentById(R.id.nav_host_fragment) as NavHostFragment).navController
             navController?.navInflater?.inflate(R.navigation.nav_graph)?.apply {
-                if (viewModel.loginState()) {
-                    setStartDestination(R.id.homeFragment)
-                } else {
-                    setStartDestination(R.id.signInFragment)
-                }
+//                if (viewModel.loginState()) {
+//                    setStartDestination(R.id.homeFragment)
+//                } else {
+
+                setStartDestination(R.id.signInFragment)
+
                 navController?.setGraph(this, intent.extras)
             }
             navController?.addOnDestinationChangedListener { _, destination, _ ->
                 if (destination.id == R.id.signInFragment) {
-                    makeInvisibleNavigation()
+//                    makeInvisibleNavigation()
                 } else {
-                    makeVisibleNavigation()
+//                    makeVisibleNavigation()
                 }
             }
         }

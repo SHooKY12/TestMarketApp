@@ -7,8 +7,8 @@ abstract class BaseActivity: AppCompatActivity() {
 
     open val viewModel: BaseViewModel? = null
 
-    override fun attachBaseContext(newBase: Context) {
-        super.attachBaseContext(LocaleHelper.onAttach(newBase))
-    }
+//    override fun attachBaseContext(newBase: Context) {
+//        super.attachBaseContext(LocaleHelper.onAttach(newBase))
+//    }
 
 }

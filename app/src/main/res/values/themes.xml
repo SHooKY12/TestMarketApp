@@ -2,4 +2,28 @@
 <resources>
 
     <style name="Theme.TestShopApplication" parent="android:Theme.Material.Light.NoActionBar" />
+
+
+    <style name="TextInputLayoutAppearance">
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textColorHint">@color/grey</item>
+    </style>
+
+    <style name="TextInputEditText">
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textColorHint">@color/grey</item>
+        <item name="android:background">@drawable/rectangle_text_input</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:paddingHorizontal">12dp</item>
+    </style>
+
+    <style name="TextInputLayout">
+        <item name="boxBackgroundColor">@color/white</item>
+        <item name="boxStrokeColor">@color/white</item>
+        <item name="boxStrokeWidth">0dp</item>
+        <item name="boxStrokeWidthFocused">0dp</item>
+        <item name="android:textColorHint">@color/grey</item>
+    </style>
+
+
 </resources>

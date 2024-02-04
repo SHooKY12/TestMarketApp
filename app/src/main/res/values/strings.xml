@@ -7,4 +7,5 @@
     <string name="btn_text">Войти</string>
     <string name="tv_terms_of_agreement">Нажимая кнопку “Войти”, Вы принимаете</string>
     <string name="tv_continue_terms">условия программы лояльности</string>
+    <string name="user_phone_number">Номер телефона</string>
 </resources>
